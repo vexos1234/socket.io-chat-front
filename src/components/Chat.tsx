@@ -10,7 +10,7 @@ import '../styles.css'
 import Messages from './Messages';
 import { FaPaperPlane } from 'react-icons/fa';
 
-function Chat() {
+function Chat(socket: any, username: string, room: string) {
 
   return (
     <Box display="flex">

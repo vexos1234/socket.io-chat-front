@@ -39,7 +39,7 @@ const Message: React.FC<MessageProps> = ({ text, isSender }) => {
     );
 };
 
-const Messages: React.FC = () => {
+const Messages: React.FC = (socket: any, username: string, room: string) => {
     const messages = [
         { id: 1, text: 'Hello!', isSender: true },
         { id: 2, text: 'Hi there!', isSender: false },
